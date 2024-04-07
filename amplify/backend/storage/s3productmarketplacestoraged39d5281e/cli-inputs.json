@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3productmarketplacestoraged39d5281e",
+  "bucketName": "product-marketplace-storage-d39d5281e",
+  "policyUUID": "54c803bf",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

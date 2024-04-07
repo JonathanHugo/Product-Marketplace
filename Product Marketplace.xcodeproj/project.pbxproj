@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12980F1DDC0F42243C4ED820 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 44789439AF873E694AC018C2 /* amplifyconfiguration.json */; };
+		31AE868F2BC332A3006755D7 /* AmplifyImage in Frameworks */ = {isa = PBXBuildFile; productRef = 31AE868E2BC332A3006755D7 /* AmplifyImage */; };
+		31AE86912BC332C0006755D7 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE86902BC332C0006755D7 /* AvatarView.swift */; };
+		31AE86932BC33319006755D7 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE86922BC33319006755D7 /* UserProfileView.swift */; };
+		31AE86952BC33376006755D7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE86942BC33376006755D7 /* MainTabView.swift */; };
+		31AE86972BC335F1006755D7 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 31AE86962BC335F1006755D7 /* AWSS3StoragePlugin */; };
+		31AE86992BC336CA006755D7 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE86982BC336CA006755D7 /* ImagePickerView.swift */; };
+		31BAA20A2BC321E700B3C063 /* Product_MarketplaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2092BC321E700B3C063 /* Product_MarketplaceApp.swift */; };
+		31BAA20C2BC321E700B3C063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA20B2BC321E700B3C063 /* ContentView.swift */; };
+		31BAA20E2BC321E900B3C063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BAA20D2BC321E900B3C063 /* Assets.xcassets */; };
+		31BAA2112BC321E900B3C063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BAA2102BC321E900B3C063 /* Preview Assets.xcassets */; };
+		31BAA2192BC325A500B3C063 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 31BAA2182BC325A500B3C063 /* Amplify */; };
+		31BAA21C2BC3264B00B3C063 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 31BAA21A2BC3264B00B3C063 /* amplifyconfiguration.json */; };
+		31BAA21D2BC3264B00B3C063 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 31BAA21B2BC3264B00B3C063 /* awsconfiguration.json */; };
+		31BAA21F2BC32B7A00B3C063 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA21E2BC32B7A00B3C063 /* LoginView.swift */; };
+		31BAA2212BC32B8F00B3C063 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2202BC32B8F00B3C063 /* SignUpView.swift */; };
+		31BAA2232BC32BA400B3C063 /* ConfirmSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2222BC32BA400B3C063 /* ConfirmSignUpView.swift */; };
+		31BAA2282BC32DDB00B3C063 /* amplify/generated/models/AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2242BC32DDB00B3C063 /* amplify/generated/models/AmplifyModels.swift */; };
+		31BAA2292BC32DDB00B3C063 /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2252BC32DDB00B3C063 /* amplify/generated/models/User.swift */; };
+		31BAA22A2BC32DDB00B3C063 /* amplify/generated/models/User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAA2262BC32DDB00B3C063 /* amplify/generated/models/User+Schema.swift */; };
+		31C85F662BC32E5300741762 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 31C85F652BC32E5300741762 /* AWSDataStorePlugin */; };
+		31C85F682BC32F2100741762 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 31C85F672BC32F2100741762 /* AWSCognitoAuthPlugin */; };
+		31C85F6A2BC3304F00741762 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C85F692BC3304F00741762 /* UserState.swift */; };
+		31C85F6C2BC3306900741762 /* MarketplaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C85F6B2BC3306900741762 /* MarketplaceError.swift */; };
+		31C85F6E2BC3307F00741762 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C85F6D2BC3307F00741762 /* SessionView.swift */; };
+		31DBADDCA66EB03DD1BAFCB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C198D2FA44968860F1A696C /* User.swift */; };
+		460867CA809EFF797BF149DE /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16EFEC510698E992E3B2262 /* User+Schema.swift */; };
+		8C6DA73C2A219FDBAB3E7388 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D12ED5ABD660A9BD83C5B021 /* awsconfiguration.json */; };
+		9D0D3624DA1B29B744CF447C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D7031014BC709BB09747 /* AmplifyModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31AE86902BC332C0006755D7 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		31AE86922BC33319006755D7 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		31AE86942BC33376006755D7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		31AE86982BC336CA006755D7 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		31BAA2062BC321E700B3C063 /* Product Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product Marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31BAA2092BC321E700B3C063 /* Product_MarketplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_MarketplaceApp.swift; sourceTree = "<group>"; };
+		31BAA20B2BC321E700B3C063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31BAA20D2BC321E900B3C063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31BAA2102BC321E900B3C063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31BAA21A2BC3264B00B3C063 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		31BAA21B2BC3264B00B3C063 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		31BAA21E2BC32B7A00B3C063 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31BAA2202BC32B8F00B3C063 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		31BAA2222BC32BA400B3C063 /* ConfirmSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpView.swift; sourceTree = "<group>"; };
+		31BAA2242BC32DDB00B3C063 /* amplify/generated/models/AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		31BAA2252BC32DDB00B3C063 /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		31BAA2262BC32DDB00B3C063 /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		31C85F692BC3304F00741762 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		31C85F6B2BC3306900741762 /* MarketplaceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceError.swift; sourceTree = "<group>"; };
+		31C85F6D2BC3307F00741762 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		44789439AF873E694AC018C2 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		9C198D2FA44968860F1A696C /* User.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		A945D7031014BC709BB09747 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		D12ED5ABD660A9BD83C5B021 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		F16EFEC510698E992E3B2262 /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31BAA2032BC321E700B3C063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AE86972BC335F1006755D7 /* AWSS3StoragePlugin in Frameworks */,
+				31BAA2192BC325A500B3C063 /* Amplify in Frameworks */,
+				31AE868F2BC332A3006755D7 /* AmplifyImage in Frameworks */,
+				31C85F662BC32E5300741762 /* AWSDataStorePlugin in Frameworks */,
+				31C85F682BC32F2100741762 /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31BAA1FD2BC321E700B3C063 = {
+			isa = PBXGroup;
+			children = (
+				31BAA2082BC321E700B3C063 /* Product Marketplace */,
+				31BAA2072BC321E700B3C063 /* Products */,
+				3C2B96A3758F8BD367FA8714 /* AmplifyConfig */,
+				C3C4A07C347D9835A1D9ACAD /* AmplifyModels */,
+				31BAA22B2BC32E1100B3C063 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31BAA2072BC321E700B3C063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31BAA2062BC321E700B3C063 /* Product Marketplace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31BAA2082BC321E700B3C063 /* Product Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				31BAA2272BC32DDB00B3C063 /* models */,
+				31BAA2092BC321E700B3C063 /* Product_MarketplaceApp.swift */,
+				31BAA20B2BC321E700B3C063 /* ContentView.swift */,
+				31BAA20D2BC321E900B3C063 /* Assets.xcassets */,
+				31BAA20F2BC321E900B3C063 /* Preview Content */,
+				31BAA21E2BC32B7A00B3C063 /* LoginView.swift */,
+				31BAA2202BC32B8F00B3C063 /* SignUpView.swift */,
+				31BAA2222BC32BA400B3C063 /* ConfirmSignUpView.swift */,
+				31C85F692BC3304F00741762 /* UserState.swift */,
+				31C85F6B2BC3306900741762 /* MarketplaceError.swift */,
+				31C85F6D2BC3307F00741762 /* SessionView.swift */,
+				31AE86902BC332C0006755D7 /* AvatarView.swift */,
+				31AE86922BC33319006755D7 /* UserProfileView.swift */,
+				31AE86942BC33376006755D7 /* MainTabView.swift */,
+				31AE86982BC336CA006755D7 /* ImagePickerView.swift */,
+			);
+			path = "Product Marketplace";
+			sourceTree = "<group>";
+		};
+		31BAA20F2BC321E900B3C063 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				31BAA2102BC321E900B3C063 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31BAA2272BC32DDB00B3C063 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		31BAA22B2BC32E1100B3C063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C2B96A3758F8BD367FA8714 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D12ED5ABD660A9BD83C5B021 /* awsconfiguration.json */,
+				44789439AF873E694AC018C2 /* amplifyconfiguration.json */,
+				31BAA21B2BC3264B00B3C063 /* awsconfiguration.json */,
+				31BAA21A2BC3264B00B3C063 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		C3C4A07C347D9835A1D9ACAD /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				A945D7031014BC709BB09747 /* AmplifyModels.swift */,
+				F16EFEC510698E992E3B2262 /* User+Schema.swift */,
+				9C198D2FA44968860F1A696C /* User.swift */,
+				31BAA2252BC32DDB00B3C063 /* amplify/generated/models/User.swift */,
+				31BAA2242BC32DDB00B3C063 /* amplify/generated/models/AmplifyModels.swift */,
+				31BAA2262BC32DDB00B3C063 /* amplify/generated/models/User+Schema.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31BAA2052BC321E700B3C063 /* Product Marketplace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31BAA2142BC321E900B3C063 /* Build configuration list for PBXNativeTarget "Product Marketplace" */;
+			buildPhases = (
+				31BAA2022BC321E700B3C063 /* Sources */,
+				31BAA2032BC321E700B3C063 /* Frameworks */,
+				31BAA2042BC321E700B3C063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Product Marketplace";
+			packageProductDependencies = (
+				31BAA2182BC325A500B3C063 /* Amplify */,
+				31C85F652BC32E5300741762 /* AWSDataStorePlugin */,
+				31C85F672BC32F2100741762 /* AWSCognitoAuthPlugin */,
+				31AE868E2BC332A3006755D7 /* AmplifyImage */,
+				31AE86962BC335F1006755D7 /* AWSS3StoragePlugin */,
+			);
+			productName = "Product Marketplace";
+			productReference = 31BAA2062BC321E700B3C063 /* Product Marketplace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31BAA1FE2BC321E700B3C063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					31BAA2052BC321E700B3C063 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 31BAA2012BC321E700B3C063 /* Build configuration list for PBXProject "Product Marketplace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31BAA1FD2BC321E700B3C063;
+			packageReferences = (
+				31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				31AE868D2BC332A3006755D7 /* XCRemoteSwiftPackageReference "amplifyimage" */,
+			);
+			productRefGroup = 31BAA2072BC321E700B3C063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31BAA2052BC321E700B3C063 /* Product Marketplace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31BAA2042BC321E700B3C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BAA2112BC321E900B3C063 /* Preview Assets.xcassets in Resources */,
+				31BAA20E2BC321E900B3C063 /* Assets.xcassets in Resources */,
+				31BAA21D2BC3264B00B3C063 /* awsconfiguration.json in Resources */,
+				31BAA21C2BC3264B00B3C063 /* amplifyconfiguration.json in Resources */,
+				8C6DA73C2A219FDBAB3E7388 /* awsconfiguration.json in Resources */,
+				12980F1DDC0F42243C4ED820 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31BAA2022BC321E700B3C063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BAA2212BC32B8F00B3C063 /* SignUpView.swift in Sources */,
+				31BAA21F2BC32B7A00B3C063 /* LoginView.swift in Sources */,
+				31BAA2232BC32BA400B3C063 /* ConfirmSignUpView.swift in Sources */,
+				31BAA22A2BC32DDB00B3C063 /* amplify/generated/models/User+Schema.swift in Sources */,
+				31AE86992BC336CA006755D7 /* ImagePickerView.swift in Sources */,
+				31BAA20C2BC321E700B3C063 /* ContentView.swift in Sources */,
+				31BAA2282BC32DDB00B3C063 /* amplify/generated/models/AmplifyModels.swift in Sources */,
+				31C85F6C2BC3306900741762 /* MarketplaceError.swift in Sources */,
+				31C85F6E2BC3307F00741762 /* SessionView.swift in Sources */,
+				31C85F6A2BC3304F00741762 /* UserState.swift in Sources */,
+				31AE86952BC33376006755D7 /* MainTabView.swift in Sources */,
+				31BAA20A2BC321E700B3C063 /* Product_MarketplaceApp.swift in Sources */,
+				9D0D3624DA1B29B744CF447C /* AmplifyModels.swift in Sources */,
+				31AE86932BC33319006755D7 /* UserProfileView.swift in Sources */,
+				460867CA809EFF797BF149DE /* User+Schema.swift in Sources */,
+				31BAA2292BC32DDB00B3C063 /* amplify/generated/models/User.swift in Sources */,
+				31AE86912BC332C0006755D7 /* AvatarView.swift in Sources */,
+				31DBADDCA66EB03DD1BAFCB6 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		31BAA2122BC321E900B3C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31BAA2132BC321E900B3C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31BAA2152BC321E900B3C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Product Marketplace/Preview Content\"";
+				DEVELOPMENT_TEAM = 2F4326TB4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gallery access required to provide photos to upload";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.Jhugo.Product-Marketplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31BAA2162BC321E900B3C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Product Marketplace/Preview Content\"";
+				DEVELOPMENT_TEAM = 2F4326TB4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gallery access required to provide photos to upload";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.Jhugo.Product-Marketplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31BAA2012BC321E700B3C063 /* Build configuration list for PBXProject "Product Marketplace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31BAA2122BC321E900B3C063 /* Debug */,
+				31BAA2132BC321E900B3C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31BAA2142BC321E900B3C063 /* Build configuration list for PBXNativeTarget "Product Marketplace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31BAA2152BC321E900B3C063 /* Debug */,
+				31BAA2162BC321E900B3C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31AE868D2BC332A3006755D7 /* XCRemoteSwiftPackageReference "amplifyimage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kilo-loco/amplifyimage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31AE868E2BC332A3006755D7 /* AmplifyImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31AE868D2BC332A3006755D7 /* XCRemoteSwiftPackageReference "amplifyimage" */;
+			productName = AmplifyImage;
+		};
+		31AE86962BC335F1006755D7 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSS3StoragePlugin;
+		};
+		31BAA2182BC325A500B3C063 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		31C85F652BC32E5300741762 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		31C85F672BC32F2100741762 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31BAA2172BC325A500B3C063 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 31BAA1FE2BC321E700B3C063 /* Project object */;
+}
