@@ -1,5 +1,6 @@
 import SwiftUI
 import Amplify
+import Combine
 
 struct UserProfileView: View {
     // 1
@@ -12,6 +13,10 @@ struct UserProfileView: View {
     // 2
     @State var newAvatarImage: UIImage?
     // 3
+    @State var products: [Product] = []
+    @State var tokens: Set<AnyCancellable> = []
+    
+    
     var avatarState: AvatarState {
         newAvatarImage.flatMap({ AvatarState.local(image: $0) })
         ?? .remote(avatarKey: userState.userAvatarKey)
@@ -40,29 +45,34 @@ struct UserProfileView: View {
                 // 3
                 ScrollView {
                     LazyVGrid(columns: columns) {
-                        ForEach(0..<10) { i in
-                            Color.red
-                                .aspectRatio(contentMode: .fill)
+                        ForEach(products.indices, id: \.self) { index in
+                            let product = products[index]
+                            ProductGridCell(product: product)
+                            ForEach(0..<10) { i in
+                                Color.red
+                                    .aspectRatio(contentMode: .fill)
+                            }
                         }
                     }
                 }
-            }
-            .navigationTitle("My Account")
-            // 3
-            .toolbar {
-                ToolbarItem {
-                    Button(
-                        action: {
-                            Task {
-                                await signOut()
-                            }
-                        },
-                        label: { Image(systemName: "rectangle.portrait.and.arrow.right") }
-                    )
+                .navigationTitle("My Account")
+                // 3
+                .toolbar {
+                    ToolbarItem {
+                        Button(
+                            action: {
+                                Task {
+                                    await signOut()
+                                }
+                            },
+                            label: { Image(systemName: "rectangle.portrait.and.arrow.right") }
+                        )
+                    }
                 }
-            }
-            .sheet(isPresented: $isImagePickerVisible) {
-                ImagePickerView(image: $newAvatarImage)
+                .sheet(isPresented: $isImagePickerVisible) {
+                    ImagePickerView(image: $newAvatarImage)
+                }
+                .onAppear(perform: observeCurrentUsersProducts)
             }
         }
     }
@@ -94,6 +104,35 @@ struct UserProfileView: View {
         }
     }
     
-    
+    func observeCurrentUsersProducts() {
+        // 1
+        Amplify.Publisher.create(
+            // 2
+            Amplify.DataStore.observeQuery(
+                for: Product.self,
+                where: Product.keys.userId == userState.userId
+            )
+        )
+        // 3
+        .map(\.items)
+        // 4
+        .receive(on: DispatchQueue.main)
+        .sink(
+            receiveCompletion: { print($0) },
+            receiveValue: { products in
+                print("Product count:", products.count)
+                // 5
+                self.products = products.sorted {
+                    guard
+                        let date1 = $0.createdAt,
+                        let date2 = $1.createdAt
+                    else { return false }
+                    return date1 > date2
+                }
+            }
+        )
+        .store(in: &tokens)
+    }
     
 }
+
