@@ -31,7 +31,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationTitle("Home")
+            .navigationTitle("Welcome to the Record Store")
             // 6
             .toolbar {
                 ToolbarItem {
